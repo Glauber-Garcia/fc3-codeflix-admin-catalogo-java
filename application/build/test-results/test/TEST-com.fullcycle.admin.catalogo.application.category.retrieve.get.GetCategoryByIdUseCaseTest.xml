@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.fullcycle.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-12-21T13:29:21" hostname="GLAUBER-PC" time="0.032">
+<testsuite name="com.fullcycle.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-02-08T13:30:18" hostname="glauber-Aspire-A315-41" time="0.021">
   <properties/>
-  <testcase name="givenAValidId_whenGatewayThrowsException_shouldReturnException()" classname="com.fullcycle.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest" time="0.007"/>
-  <testcase name="givenAInvalidId_whenCallsGetCategory_shouldReturnNotFound()" classname="com.fullcycle.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest" time="0.013"/>
-  <testcase name="givenAValidId_whenCallsGetCategory_shouldReturn()" classname="com.fullcycle.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest" time="0.007"/>
+  <testcase name="givenAValidId_whenGatewayThrowsException_shouldReturnException()" classname="com.fullcycle.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest" time="0.006"/>
+  <testcase name="givenAInvalidId_whenCallsGetCategory_shouldReturnNotFound()" classname="com.fullcycle.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest" time="0.007"/>
+  <testcase name="givenAValidId_whenCallsGetCategory_shouldReturn()" classname="com.fullcycle.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCaseTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

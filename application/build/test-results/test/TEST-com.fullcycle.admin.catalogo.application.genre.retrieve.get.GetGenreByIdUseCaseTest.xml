@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fullcycle.admin.catalogo.application.genre.retrieve.get.GetGenreByIdUseCaseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-02-08T13:30:18" hostname="glauber-Aspire-A315-41" time="0.01">
+  <properties/>
+  <testcase name="givenAValidId_whenCallsGetGenre_shouldReturnGenre()" classname="com.fullcycle.admin.catalogo.application.genre.retrieve.get.GetGenreByIdUseCaseTest" time="0.006"/>
+  <testcase name="givenAValidId_whenCallsGetGenreAndDoesNotExists_shouldReturnNotFound()" classname="com.fullcycle.admin.catalogo.application.genre.retrieve.get.GetGenreByIdUseCaseTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

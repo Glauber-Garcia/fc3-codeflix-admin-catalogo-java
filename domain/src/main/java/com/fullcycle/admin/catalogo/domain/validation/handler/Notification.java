@@ -19,11 +19,12 @@ public class Notification implements ValidationHandler {
         return new Notification(new ArrayList<>());
     }
 
-    public static Notification create(final Error error) {
-        return new Notification(new ArrayList<>()).append(error);
-    }
     public static Notification create(final Throwable t) {
         return create(new Error(t.getMessage()));
+    }
+
+    public static Notification create(final Error anError) {
+        return new Notification(new ArrayList<>()).append(anError);
     }
 
     @Override
@@ -33,25 +34,29 @@ public class Notification implements ValidationHandler {
     }
 
     @Override
-    public Notification append(ValidationHandler anHandler) {
+    public Notification append(final ValidationHandler anHandler) {
         this.errors.addAll(anHandler.getErrors());
         return this;
     }
 
     @Override
-    public ValidationHandler validate(Validation aValidation) {
+    public <T> T validate(final Validation<T> aValidation) {
         try {
-            aValidation.validate();
+            return aValidation.validate();
         } catch (final DomainException ex) {
             this.errors.addAll(ex.getErrors());
         } catch (final Throwable t) {
             this.errors.add(new Error(t.getMessage()));
         }
-        return this;
+        return null;
     }
 
     @Override
     public List<Error> getErrors() {
         return this.errors;
+    }
+
+    public boolean hasErrors() {
+        return this.hasError();
     }
 }
